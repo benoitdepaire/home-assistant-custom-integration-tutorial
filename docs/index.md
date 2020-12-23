@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Getting started
 
-You can use the [editor on GitHub](https://github.com/benoitdepaire/learn-how-to-develop-home-assistant-custom-integrations/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+I created these pages to keep track of my learning progress towards developing my own home assistant custom integration. Originally, my goal was to integrate my DALI-infrastructure into HA. As my DALI controllers and relais were some custom fabrication, I could not reuse some of the work already out there and had to create my own integration. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A first attempt got stuff working, but I felt that I still didn't fully undertand what was happening. And that's something I don't like. I really like Home Assistant and it is something I can see become a new hobby. However, getting to the point where you can confidently start building a custom integration and don't feel like you're just hacking other people's code until you got things to work, isn't easy.
 
-### Markdown
+While there is quite some documentation out there as well as a vibrant community, I do feel there is something missing out there. A source for people who want to learn how to develop their own custom integration. The way I see it, we need something that meets the following requirements:
+- A proper explanation of the architecture of Home Assistant
+- Some good examples of integrations that can act as references
+- A proper understanding of key parts of the core HA code
+- A repository of usefull resources
+- Step-by-step tutorials to develop your own customer integrations
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I have no idea where this project will lead me, but hopefully it can become useful to other people too. Let's get started.
 
-```markdown
-Syntax highlighted code block
+## Table of Contents
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/benoitdepaire/learn-how-to-develop-home-assistant-custom-integrations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### [Home Assistant Architecture](/architecture/index.md)
+### Resources
