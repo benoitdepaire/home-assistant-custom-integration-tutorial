@@ -41,7 +41,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
 This method has almost the same signature as the async_setup method, except that its second argument is a ConfigEntry instance instead of a ConfigType entry. 
 
-_This raises the question what is the difference between both?_ Looking at the import statements, we can already see that ConfigEntry comes from the config_entries module of Hass, whereas ConfigType comes from the helper module typing.
+_This raises the question what is the difference between both?_ Looking at the import statements, we can already see that ConfigEntry comes from the config_entries module of Hass, whereas ConfigType comes from the helper module typing. Opening this helper module shows us that `ConfigType` is simply a dictionary where the keys are strings and the values can be any type of value.
 
 Let's have a look at the code
 
