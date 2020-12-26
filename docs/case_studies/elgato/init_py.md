@@ -70,23 +70,22 @@ Next, an Elgato object is created. This is an instance of the third-party packag
 
 ```
 
-Next, we try to connect to the Elgato keylight and throw an exception if this fails
+Next, we try to connect to the Elgato keylight and throw an exception if this fails. The await method shows that this ansyc_setup_entry can be interrupted here while waiting for a response from the elgato.info() method.
 
 ```python
-    hass.data.setdefault(DOMAIN, {})
-    hass.data[DOMAIN][entry.entry_id] = {DATA_ELGATO_CLIENT: elgato}
-
-
+hass.data.setdefault(DOMAIN, {})
+hass.data[DOMAIN][entry.entry_id] = {DATA_ELGATO_CLIENT: elgato}
 ```
 
-Next, the data object of the Hass object is manipulated. (need to look in to this!!!)
+Next, the data object of the Hass object is manipulated. A key is created for the DOMAIN of this integration which maps to an empty dictionary (unless this domain already exists as a key).
+Next, a new entry to this DOMAIN dictionary is added. The attribute entry_id from the ConfigEntry is used as key (???) and the value is another dictionary which has a reference to the 3rd party elgato client.
 
 ```python
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, LIGHT_DOMAIN)
-    )
+hass.async_create_task(
+    hass.config_entries.async_forward_entry_setup(entry, LIGHT_DOMAIN)
+)
 
-    return True
+return True
 ```
 
-Finally, it seems that an async task is being created within the Hass object. (Requires further investigation!)
+Finally, a new awaitable coroutine is turned into a task which is put in the event loop for execution by means of the `async_create_task` method of hass. The argument is a coroutine, returned by the `async_forward_entry_setup` method of config_entries.
