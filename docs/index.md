@@ -15,5 +15,6 @@ I have no idea where this project will lead me, but hopefully it can become usef
 
 ## Table of Contents
 
-### [Home Assistant Architecture](/architecture/index.md)
+- [Home Assistant Architecture](/architecture/index.md)
+- [Hass Core](/hass_core/core.md)
 ### Resources
