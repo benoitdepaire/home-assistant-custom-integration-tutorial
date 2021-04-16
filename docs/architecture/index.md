@@ -15,6 +15,6 @@ The current date is 23 December 2020 and the [glossary](https://www.home-assista
 - **Home Assistant Operating System** (also referred to as HassOS): The Home Assistant Operating System, is an embedded, minimalistic, operating system designed to run the Home Assistant ecosystem on single board computers (like the Raspberry Pi) or Virtual Machines. The Home Assistant Supervisor can keep it up to date, removing the need for you to manage an operating system.
 - **HomeAssistant** or **Hass**: A catch all term when there is no need for further distinction.
 
-[Continue with a high level overview of the architecture](/architecture/high_level_architecture.md)
+[Continue with a high level overview of the architecture](/high_level_architecture.md)
 
-[Go back to the main page](index.md)
+[Go back to the main page](../index.md)
