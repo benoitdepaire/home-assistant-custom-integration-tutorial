@@ -17,4 +17,4 @@ The current date is 23 December 2020 and the [glossary](https://www.home-assista
 
 [Continue with a high level overview of the architecture](/high_level_architecture.md)
 
-[Go back to the main page](../index.md)
+[Go back to the main page](../../index.md)
